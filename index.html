@@ -2,42 +2,52 @@
 <html lang="id">
   <head>
     <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Personal Website</h1>
-    <h6>Selamat datang di website pribadi saya!</h6>
     <nav>
-      <a href="index.html">Home</a> | <a href="about.html">About</a> |
-      <a href="project.html">Project</a> |<a href="katalog.html">Katalog</a> | <a href="contact.html">Contact</a>
+      <img src="assets/heartsping.png" alt="logo" class="logo" />
+      <span class="nav-tittle">Personal Website</span>
+      <div class="nav">
+        <a href="index.html">Home</a> <a href="about.html">About</a>
+        <a href="project.html">Project</a><a href="katalog.html">Katalog</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
     <hr />
 
-    <h2>Hi, Nama saya Mamba Ul Khofshoh</h2>
-    <br />
-    <img src="assets/mamba.jpeg" alt="Foto Profil" width="240" />
-    <p>
-      Saya adalah mahasiswa yang sedang belajar pengembangan Website
-      <br />
-      Website ini dibuat sebagai latihan menggunakan HTML tanpa CSS
-      <br />
-      Di Website ini Anda dapat mengenali saya, melihat beberapa project, serta
-      menghubungi saya melalui halaman Contact
-    </p>
-    <br />
-    <h2>Yang Sedang saya pelajari :</h2>
-    <ul>
-      <li>HTML</li>
-      <li>Algoritma Pemrograman</li>
-      <li>Basis Data</li>
-      <li>UI/UX</li>
-    </ul>
-
-    <br />
-    Silahkan kunjungi halaman <a href="about.html">About</a> untuk mengetahui
-    profil saya lebih lengkap.
-    <hr />
-  </body>
-  <footer>
+    <div class="main-content">
+    <section id="home">
+      <div class="deskripsi">
+        <h2>Hi, Nama saya Mamba Ul Khofshoh</h2>
+        <p>
+          Saya adalah mahasiswa yang sedang belajar pengembangan Website Website
+          ini dibuat sebagai latihan menggunakan HTML tanpa CSS Di Website ini
+          Anda dapat mengenali saya, melihat beberapa project, serta menghubungi
+          saya melalui halaman Contact
+        </p>
+        <br />
+        <img
+          src="assets/mamba.jpeg"
+          alt="Foto Profil"
+          width="240"
+          class="foto"
+        />
+        </section>
+        <h2 class="h2">Yang Sedang saya pelajari :</h2>
+        <div class="card-container">
+          <div class="card">HTML</div>
+          <div class="card">Algoritma Pemrograman</div>
+          <div class="card">Basis Data</div>
+          <div class="card">UI/UX</div>
+        </div>
+    </div>
+      </div>
+    </div>
+    <footer class="footer">
+      Silahkan kunjungi halaman <a href="about.html">About</a> untuk
+        mengetahui profil saya lebih lengkap.
     <p>&copy; 2026 Mamba Ul Khofshoh. Dibuat menggunakan HTML.</p>
   </footer>
+  </body>
 </html>
