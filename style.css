@@ -18,7 +18,7 @@ nav{
 }
 .nav-tittle{
   display: flex;
-  align-items: left;
+  align-items: flex-start;
   font-weight: bold;
   font-size: 18px;
 }
@@ -58,6 +58,10 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 100px;
+
+
+    animation-duration: 3s;
+    animation-name: spin;
 }
 .foto{
     height: 300px;
@@ -72,6 +76,12 @@ nav{
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 16px;
+
+  animation-duration: 1.2s;
+  animation-name: jatuh;
+}
+.card-container :hover{
+  background-color: skyblue;
 }
 .card{
   background-color: rgb(255, 147, 165);
@@ -86,4 +96,32 @@ nav{
   padding: 15px 40px;
   background-color:rgb(142, 213, 249);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.293);
+}
+
+@keyframes spin {
+   50%{     /* yang menentukan durasi saat animasi berjalan */ 
+    scale: 1;
+    rotate: 0;
+
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    scale: 1;
+  }
+}
+
+@keyframes jatuh {
+  0% {
+    transform: -200px;
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  85%{
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
