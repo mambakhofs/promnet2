@@ -2,58 +2,81 @@
 <html lang="id">
   <head>
     <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>My Project</h1>
     <nav>
-      <a href="index.html">Home</a> | <a href="about.html">About</a> |
-      <a href="project.html">Project</a> | <a href="contact.html">Contact</a>
+      <img src="assets/heartsping.png" alt="logo" class="logo" />
+      <span class="nav-tittle">Personal Website</span>
+      <div class="nav">
+        <a href="index.html">Home</a> <a href="about.html">About</a>
+        <a href="project.html">Project</a><a href="katalog.html">Katalog</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
     <hr />
-    <h3>Daftar Project</h3>
-    <p>
+    <h2>Daftar Project</h2>
+    <p class="p-project">
       Berikut adalah beberapa project sederhana yang pernah atau sedang saya
       kerjakan.
     </p>
-    <h2>Project 1 : Alat pendeteksi api</h2>
-    <img src="assets/project_1.jpeg" alt="Ilustrasi Project" width="240" />
-    <p>
-      Alat ini dibuat dengan konsep tanpa menggunakan codingan sama sekali, alat
-      pendeteksi api hanya dibuat dengan bantuan dari alat sensor dan juga
-      baterai
-      <br />
-    </p>
-
-    <h2>Project 2 : MINDVENTURE</h2>
-    <img src="assets/mindventure.jpeg" alt="Ilustrasi Project" width="240" />
-    <p>
-      Game ini bertema fantasi yang dibuat oleh teman teman 2B yang seluruh
-      progressnya dikembangkan bersama - sama
-      <br />
-      Repository :
-      <a href="https://github.com/ceceaj/Project-UAS-2B">Lihat di Github</a>
-    </p>
+    <div class="card-container-project">
+      <div class="card-project">
+        <img src="assets/project_1.jpeg" alt="Ilustrasi Project" />
+        <div class="card-contect-project">
+          <h3>Project 1 : Alat pendeteksi api</h3>
+          <p>
+            Alat ini dibuat dengan konsep tanpa menggunakan codingan sama
+            sekali, alat pendeteksi api hanya dibuat dengan bantuan dari alat
+            sensor dan juga baterai. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsam, similique.
+          </p>
+        </div>
+      </div>
+      <div class="card-project">
+        <br />
+        <img src="assets/mindventure.jpeg" alt="Ilustrasi Project" />
+        <div class="card-contect-project">
+          <h3>Project 2 : MINDVENTURE</h3>
+          <p>
+            Game ini bertema fantasi yang dibuat oleh teman teman 2B yang
+            seluruh progressnya dikembangkan bersama - sama. Lorem ipsum, dolor
+            sit amet consectetur adipisicing elit. Quibusdam, magnam. Lorem
+            ipsum dolor sit amet consectetur adipisicing.
+            <a href="https://github.com/ceceaj/Project-UAS-2B"
+              >Lihat di Github</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="card-project">
+        <br />
+        <img src="assets/project_2.png" alt="Ilustrasi Project" width="240" />
+        <div class="card-contect-project">
+          <h3>Project 3 : Website HTML</h3>
+          <p>
+            Website sederhana dibuat dengan HTML dan belum dipercantik memakai
+            CSS. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+            at facere incidunt, fugiat odio, quas veniam minus voluptatum id
+            doloribus delectus exercitationem voluptas a aperiam!. Lorem =
+          </p>
+        </div>
+      </div>
+    </div>
     <br />
-    <h2>Project 3 : Website HTML</h2>
-    <img src="assets/project_2.png" alt="Ilustrasi Project" width="240" />
-    <p>
-      Website sederhana dibuat dengan HTML dan belum dipercantik memakai CSS.
-      <br />
-    </p>
-    <br />
-    <h2>Teknologi yang digunakan :</h2>
-    <ul>
-      <li>HTML</li>
-      <li>Flame Sensor</li>
-      <li>Godot</li>
-    </ul>
+    <h2>Teknologi yang digunakan</h2>
+    <div class="card-tools-project">
+      <div class="card-content-project">HTML</div>
+      <div class="card-content-project">Flame Sensor</div>
+      <div class="card-content-project">Godot</div>
+    </div>
     <br />
     <h2>Ringkasan Project</h2>
 
     <table border="2" cellspading="10" cellpadding="10">
-      <tr>
-        <td colspan="4" align="center">Ringkasan Portofolio Project</td>
-      </tr>
+      <thead>
+        <th colspan="4" align="center">Ringkasan Portofolio Project</th>
+      </thead>
       <tr>
         <td rowspan="2">No.</td>
         <td rowspan="2">Nama Project</td>
